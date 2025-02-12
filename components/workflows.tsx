@@ -1,73 +1,60 @@
 import Image from "next/image";
-// import { Button } from "@shadcn/ui";
+import BlackBike from "@/public/images/blackBike.png";
+import WhiteBike from "@/public/images/WhiteBike.png";
+import WhiteTrailBlaze from "@/public/images/whiteTrailBlaze.png";
 
-// Replace with actual image paths
-import Bike1 from "E:IMPORTED FROM CDesktopinterviewBike_WebpublicimagesWhiteBike.png";
-import Bike2 from "E:IMPORTED FROM CDesktopinterviewBike_Webpublicimages\blackBike.png";
-import Bike3 from "E:IMPORTED FROM CDesktopinterviewBike_WebpublicimageswhiteTrailBlaze.png";
-import Link from "next/link";
-
-const bikes = [
-  {
-    name: "White Thunder",
-    description: "A sleek and stylish bike designed for speed and performance.",
-    image: Bike1,
-  },
-  {
-    name: "Black Panther",
-    description: "A powerful and sturdy bike with an aggressive look.",
-    image: Bike2,
-  },
-  {
-    name: "Red Beast",
-    description: "A bold and dynamic bike built for adventure seekers.",
-    image: Bike3,
-  },
-];
-
-const BikeCard = ({
-  name,
-  description,
-  image,
-}: {
-  name: string;
-  description: string;
-  image: any;
-}) => {
+export default function BikeSection() {
   return (
-    <div className="flex w-full max-w-6xl px-4 sm:px-6 my-10 bg-gray-800 rounded-lg shadow-lg">
-      {/* Left Side: Image */}
-      <div className="w-1/2 flex justify-center p-6">
+    <section className="flex flex-col py-12 space-y-12">
+      {/* First row: Black Bike */}
+      <div className="flex items-center justify-center space-x-12">
+        <Image src={BlackBike} alt="Black Bike" width={600} height={400} />
+        <div className="text-justify">
+          <h2 className="text-2xl font-bold text-white">Black Bike</h2>
+          <p className="text-lg text-gray-300">
+            The Black Bike combines speed, performance, and style in one sleek
+            package.
+          </p>
+          <button className="mt-4 px-6 py-2 bg-purple-600 text-white text-lg font-semibold rounded-lg">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      {/* Second row: White Bike */}
+      <div className="flex items-center justify-center space-x-12">
+        <div className="text-justify">
+          <h2 className="text-2xl font-bold text-white">White Bike</h2>
+          <p className="text-lg text-gray-300">
+            The White Bike offers a smooth and powerful ride for urban
+            commuting.
+          </p>
+          <button className="mt-4 px-6 py-2 bg-purple-600 text-white text-lg font-semibold rounded-lg">
+            Buy Now
+          </button>
+        </div>
+        <Image src={WhiteBike} alt="White Bike" width={600} height={400} />
+      </div>
+
+      {/* Third row: Trail Blaze Bike */}
+      <div className="flex items-center justify-center space-x-12">
         <Image
-          className="object-cover w-full h-auto rounded-lg"
-          src={image}
-          alt={name}
-          width={500}
-          height={500}
+          src={WhiteTrailBlaze}
+          alt="Trail Blaze"
+          width={600}
+          height={400}
         />
+        <div className="text-justify">
+          <h2 className="text-2xl font-bold text-white">Trail Blaze</h2>
+          <p className="text-lg text-gray-300">
+            The Trail Blaze is built for adventure, offering durability and
+            speed on rough terrains.
+          </p>
+          <button className="mt-4 px-6 py-2 bg-purple-600 text-white text-lg font-semibold rounded-lg">
+            Buy Now
+          </button>
+        </div>
       </div>
-
-      {/* Right Side: Details */}
-      <div className="w-1/2 p-8 text-white flex flex-col justify-center">
-        <h2 className="text-4xl font-bold mb-4">{name}</h2>
-        <p className="text-lg text-gray-300 mb-6">{description}</p>
-        <Link
-          href="#"
-          className="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-6 rounded-lg"
-        >
-          Buy Now
-        </Link>
-      </div>
-    </div>
-  );
-};
-
-export default function BikeShowcase() {
-  return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-gray-900 py-10">
-      {bikes.map((bike, index) => (
-        <BikeCard key={index} {...bike} />
-      ))}
     </section>
   );
 }
