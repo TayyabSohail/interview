@@ -4,11 +4,9 @@ import Image from "next/image";
 
 export default function Testimonials() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black px-4">
-      {" "}
+    <div className="flex justify-center items-center min-h-screen bg-[#080414] px-4">
       {/* Added padding for responsiveness */}
       <div className="text-center text-white max-w-2xl w-full">
-        {" "}
         {/* Set max-width to make the content smaller */}
         {/* Profile Image */}
         <div className="mb-6">
