@@ -37,3 +37,7 @@ next-env.d.ts
 
 # contentlayer
 .contentlayer
+
+# local env files
+.env
+.env*.local
