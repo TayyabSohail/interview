@@ -1,6 +1,3 @@
-import VideoThumb from "@/public/images/hero-image-01.jpg";
-import ModalVideo from "@/components/modal-video";
-
 export default function HeroHome() {
   return (
     <section>
@@ -39,6 +36,15 @@ export default function HeroHome() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Image below Buy Now button */}
+        <div className="w-full mt-8">
+          <img
+            src="images/RedBike.png"
+            alt="Red Bike"
+            className="w-full h-auto object-cover"
+          />
         </div>
       </div>
     </section>
