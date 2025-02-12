@@ -15,7 +15,7 @@ This project replicates a landing page design from Figma using **Next.js**, **Ta
    git clone https://github.com/TayyabSohail/interview.git
 
 ## WORKING 
-[landing_page_interview.webm](https://github.com/user-attachments/assets/63d20b98-30d5-4fa3-aa33-5b5606e9eaac)
+[landing_page_interview.webm](https://github.com/user-attachments/assets/a25c29af-5f67-46cb-ae51-6cd9ce18b09c)
 
 ## Mobile Responsiveness
 [PhoneResponsive.webm](https://github.com/user-attachments/assets/368f18c7-4111-4dac-88bc-b436d49c5993)
