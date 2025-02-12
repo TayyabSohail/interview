@@ -7,6 +7,7 @@ import PageIllustration from "@/components/page-illustration";
 import Hero from "@/components/hero-home";
 import Workflows from "@/components/workflows";
 import Testimonials from "@/components/testimonials";
+import FAQ from "@/components/FAQ";
 import Cta from "@/components/cta";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <Workflows />
       <Testimonials />
+      <FAQ />
       <Cta />
     </>
   );
