@@ -6,7 +6,6 @@ This project replicates a landing page design from Figma using **Next.js**, **Ta
 ## Features
 - **Responsive Design** (desktop view)
 - **Weather API Integration**
-- **Shadcn/UI** for UI components
 - **TypeScript** for type safety
 
 ## Setup
