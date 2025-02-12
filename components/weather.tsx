@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { fetchWeather } from "@/app/api/hello/weathter.api";
 
@@ -18,7 +20,7 @@ export const Weather = () => {
         placeholder="Enter city"
         value={city}
         onChange={(e) => setCity(e.target.value)}
-        className="mt-2 p-2 border rounded"
+        className="mt-2 p-2 border-2 border-blue-500 bg-black rounded"
       />
       <button
         onClick={handleFetchWeather}

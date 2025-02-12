@@ -9,6 +9,7 @@ import Workflows from "@/components/workflows";
 import Testimonials from "@/components/testimonials";
 import FAQ from "@/components/FAQ";
 import Cta from "@/components/cta";
+import { Weather } from "@/components/weather";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <Cta />
+      <Weather />
     </>
   );
 }
