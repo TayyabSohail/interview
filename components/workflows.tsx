@@ -5,7 +5,10 @@ import WhiteTrailBlaze from "@/public/images/whiteTrailBlaze.png";
 
 export default function BikeSection() {
   return (
-    <section className="flex flex-col py-12 space-y-12">
+    <section
+      className="flex flex-col py-12 space-y-12"
+      style={{ backgroundColor: "#080414" }}
+    >
       {/* First row: Black Bike */}
       <div className="flex items-center justify-center space-x-12">
         <Image src={BlackBike} alt="Black Bike" width={600} height={400} />
